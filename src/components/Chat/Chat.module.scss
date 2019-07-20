@@ -1,0 +1,145 @@
+@import '../../options';
+
+.chat {
+  background-color: var(--mainColor);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 600px;
+}
+
+.chat div {
+  float: left;
+}
+
+.chat form {
+  border-radius: 8px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  padding: 11px 0;
+}
+
+.title div {
+  text-align: center;
+  font-size: 16px;
+  padding:  10px 10px 10px 0;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--sideColor);
+  border-radius: 8px 8px 0 8px;
+  padding: 9px 0;
+  align-items: center;
+
+  .titleOnline {
+    div {
+      float: left;
+      padding: 5px 10px 5px 2px;
+    }
+
+    //svg{
+    //  width: 32px;
+    //  height: 28px;
+    //  float: left;
+    //}
+  }
+
+  .online {
+    color: var(--mutedText);
+    font-size: 12px;
+    padding-top: 15px;
+  }
+}
+
+.chatList {
+  height: 457px;
+  width: 100%;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--sideColor) var(--mainColor);
+  padding-top: 7px;
+}
+
+.chatList::-webkit-scrollbar {
+  width: 5px;
+}
+.chatItem {
+  height: auto;
+  width: 100%;
+  padding: 5px 15px;
+
+  .chatItem_img {
+    width: 36px;
+    height: 36px;
+    float: left;
+    border-radius: 50%;
+    border: 1px solid var(--bgChat);
+  }
+
+  .chatItem_name {
+    float: left;
+    font-size: 18px;
+    margin: 8px 10px;
+    max-width: 120px;
+    overflow: hidden;
+  }
+
+  .chatItem_message {
+    width: 90%;
+    margin: 5px 0 10px 10%;
+    font-size: 16px;
+    //color: white;
+    background: var(--bgChat);
+    padding: 10px;
+    border-radius: 0 10px 10px 10px;
+    word-wrap: break-word;
+  }
+}
+
+
+.chatInput {
+  width: 100%;
+  padding: 2px 25px 2px 21px;
+  background: var(--sideColor);
+  border-radius: 8px 0 8px 8px;
+  font-size: 16px;
+  min-height: 76px;
+  display: flex;
+}
+textarea::-webkit-scrollbar {
+  width: 3px;
+}
+.chatInput_text {
+  width: 200px;
+  height: 50px;
+  background: var(--bgField);
+  border: none;
+  color: var(--maintext);
+  resize: none;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.chatInput_buttonSend {
+  width: 50px;
+  border-radius: 8px;
+  margin-left: 10px;
+  border: 0;
+  height: 50px;
+  background-color: var(--bgField);
+  cursor: pointer;
+
+  .arrow {
+    background: url('../../img/arrow.svg') no-repeat 1px 17px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.chatInput_signIn {
+  width: 100%;
+  float: left;
+}

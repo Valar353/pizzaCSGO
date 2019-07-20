@@ -1,0 +1,143 @@
+/*@import-normalize;*/
+@import 'options';
+@font-face { font-family: 'Gotham-Black';  src: local('/fonts/GothaProMed.otf') }
+@font-face { font-family: 'BigNoodleTitlingCyr';  src: local('/fonts/big_noodle_titling_oblique.ttf') }
+
+
+
+
+
+*{
+    box-sizing: border-box;
+}
+#root{
+    background-color: var(--bgColor);
+    font-family: 'Gotham-Black';
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    background-color: #282c34;
+    min-height: 100vh;
+    /*display: flex;*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: var(--mainText);
+}
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+div{
+    box-sizing: border-box;
+}
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#root {
+    width: 100%;
+    min-height: 840px;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    width: 80%;
+    margin: 20px 10%;
+}
+a{
+    text-decoration: none;
+    color: var(--mainText);
+}
+.signInSteam{
+    background-color: darkcyan;
+    padding: 10px;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--mainColor);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--sideColor);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--bgSideColor);
+}
+html{
+    scrollbar-color: #292e35 #21252c;
+}
+
+.svg40{
+    width: 40px!important;
+    height: 40px!important;
+}
+.svg35{
+    width: 35px!important;
+    height: 35px!important;
+}
+
+.svg{
+    width: 25px;
+    height: 25px;
+    float: left;
+    padding: 0!important;
+    margin: 1px 8px 0 0!important;
+    font-size: 0;
+}
+.svg div, .svg div div{
+    padding: 0!important;
+    margin: 0!important;
+    width: 100%;
+    height: 100%;
+}
+.svg svg{
+    width: 100%;
+    height: 100%;
+}
+.svgFill{
+    fill: var(--mainText);
+}
+
+
+
+.ContentContainer{
+    padding: 20px 0;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: row;
+}
+@media (min-width: 768px) {
+    .ContentContainer{
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .ContentContainer{
+        max-width: 920px;
+        min-width: 780px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .ContentContainer{
+        max-width: 1300px;
+        min-width: 960px;
+    }
+}

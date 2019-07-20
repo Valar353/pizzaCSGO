@@ -1,0 +1,98 @@
+@import '../../options';
+
+.game{
+    float: left;
+    background-color: var(--sideColor);
+    margin: 20px 5% 0 5%;
+    width: 90%;
+    border-radius: $borderRadius;
+
+}
+
+.gameInfo{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    p{
+        padding: 0;
+        margin: 30px auto 0;
+    }
+}
+.lootInfo{
+    position: relative;
+    p{
+        padding: 10px;
+    }
+    .wear{
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+        color: var(--mainText);
+        opacity: .7;
+        text-align: center;
+    }
+    .cost{
+        position: absolute;
+        right: 15px;
+        bottom: 40px;
+        background: var(--bgSideColor);
+        padding: 5px 7px;
+        border-radius: 20px;
+        text-align: center;
+        max-width: 70px;
+        overflow: hidden;
+        max-height: 40px;
+        div{
+            float: left;
+            padding: 0 3px;
+            margin-top: 2px;
+        }
+        svg{
+            float: left;
+            width: 22px;
+            height: 22px;
+        }
+    }
+    .voting{
+        cursor: pointer;
+        background: var(--stemButton);
+        width: 112px;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 7px 0;
+        border-radius: 5px;
+        text-align: center;
+        margin: auto;
+        color: white;
+        transition: .2s;
+    }
+    .voting:hover{
+        background: rgba(134, 255, 97, 0.65);
+    }
+}
+.svgCoin{
+    height: 22px;
+    width: 22px;
+    margin-right: 0!important;
+}
+.gameDiagram{
+    width: 170px;
+    height: 170px;
+}
+.gameItem{
+    display: flex;
+    font-size: 17px;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+
+.item{
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 0;
+
+}
+.skin{
+    width: 200px;
+}

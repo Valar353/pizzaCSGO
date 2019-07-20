@@ -1,0 +1,32 @@
+@import '../../options';
+
+.gameList{
+  background-color: var(--mainColor);
+  width: 100%;
+  overflow: hidden;
+  border-radius: 8px;
+  padding-bottom: 25px;
+}
+
+.title{
+  width: 100%;
+  background-color: var(--sideColor);
+  padding: 20px 80px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  position: relative;
+}
+
+.nextGameIcon{
+  position: absolute;
+  left: 47px;
+  top: 18px;
+  width: 32px;
+  height: 32px;
+}
+.skin{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

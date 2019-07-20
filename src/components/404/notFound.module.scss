@@ -1,0 +1,25 @@
+.wrapper{
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  /* justify-content: center; */
+  /* justify-items: center; */
+  text-align: center;
+  flex-direction: column;
+  background: linear-gradient(#191b1f 30%, #313840 100%);
+  position: relative;
+  font-family: BigNoodleTitlingCyr;
+}
+.svg{
+  position: absolute;
+  width: 450px;
+  height: auto;
+  bottom: 0;
+  left: calc(50% - 225px);
+}
+@media (max-width: 750px) {
+  .svg{
+    width: 90%;
+    left: 5%;
+  }
+}

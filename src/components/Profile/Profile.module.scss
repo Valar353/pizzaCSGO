@@ -1,0 +1,221 @@
+@import '../../options';
+
+.profile {
+  position: relative;
+  max-width: 800px;
+  width: 80%;
+  background: var(--mainColor);
+  z-index: 20;
+  margin: 10vh 10%;
+  border-radius: $borderRadius;
+  overflow: hidden;
+}
+
+.info {
+  font-size: var(--mainTextSize);
+  font-weight: 700;
+  padding: 20px 50px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: content-box;
+  background: var(--sideColor);
+  height: 36px;
+}
+
+.title {
+
+  embed {
+    float: left;
+    width: 36px;
+  }
+
+  div {
+    float: left;
+    margin: 9px 15px;
+  }
+
+  .personalAvatar {
+    width: 46px;
+    height: 46px;
+    margin-top: -5px;
+    float: left;
+    border: 2px solid var(--bgSideColor);
+    border-radius: 50%;
+  }
+
+  .personalName {
+    width: 100px;
+    overflow: hidden;
+    font-size: 20px;
+  }
+}
+.fillBalance{
+  margin: 3px 15px 0 0!important;
+  animation: increase 15s infinite alternate-reverse;
+}
+.fillBalance :hover svg{
+  fill: var(--mainText);
+  transition: .4s;
+}
+//@keyframes rotate {
+//  from {
+//    transform: rotate(0);
+//  }
+//  to {
+//    transform: rotate(360deg);
+//  }
+//}
+@keyframes increase {   /* назовём анимацию: "go-left-right" */
+  from {
+    fill: gold;              /* от: left: 0px */
+  }
+  to {
+    fill: rgb(155, 153, 255);
+  }
+}
+
+.balanceBlock div{
+  float: left;
+  //display: flex;
+  //align-items: flex-start;
+  //margin-top: 0;
+
+
+  //.balanceAdd {
+  //  width: 36px;
+  //  height: 36px;
+  //  svg{
+  //    width: 36px;
+  //    height: 36px;
+  //  }
+  //}
+}
+.balanceBlock a{
+  margin-top: 5px;
+}
+
+.balanceCurrency {
+  float: left;
+}
+
+.balanceCurrent {
+  float: left;
+  //padding: 0 4px;
+}
+
+.content {
+  padding: 0 40px 20px 40px;
+
+  .personalInfo {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .personalData {
+    display: flex;
+    margin-top: 7px;
+    flex-direction: column;
+    font-size: $mainTextSize;
+    div {
+      float: left;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    form {
+
+      input {
+        font-family: Gotham-Black;
+        background: var(--bgField);
+        border: 0;
+        padding: 10px 15px;
+        width: calc(100% - 270px);
+        margin-right: 10px;
+        color: var(--mainText);
+        border-radius: $borderRadius;
+
+      }
+
+      button {
+        font-family: Gotham-Black;
+        background: var(--bgField);
+        border: 0;
+        padding: 10px 15px;
+        margin-right: 10px;
+        width: 100px;
+        border-radius: $borderRadius;
+        cursor: pointer;
+        color: var(--mainText);
+      }
+      button:hover, a:hover{
+        background-color: var(--bgSideColor);
+      }
+      a {
+        font-family: Gotham-Black;
+        background: var(--bgField);
+        padding: 10px 15px;
+        width: 100px;
+        border-radius: $borderRadius;
+
+      }
+    }
+
+  }
+
+  .steamInfo {
+    display: flex;
+
+    .dataItem {
+      margin-right: 10px;
+
+      .title {
+        padding-left: 2px;
+        
+      }
+      .value {
+        font-family: Gotham-Black;
+        background: var(--bgField);
+        padding: 10px 15px;
+        border-radius: $borderRadius;
+        min-height: 38px;
+      }
+    }
+  }
+
+
+  .siteInfo{
+    margin-top: 15px;
+
+    .title{
+      display: flex;
+      font-size: 18px;
+      div{
+        padding: 6px 15px 3px;
+        margin-bottom: 0;
+        cursor: pointer;
+      }
+      .active{
+        background: var(--sideColor);
+        border-top-left-radius: $borderRadius;
+        border-top-right-radius: $borderRadius;
+      }
+    }
+
+
+    .inventory {
+      width: 100%;
+      min-height: 100px;
+      background: var(--sideColor);
+      //padding: 25px;
+      border-radius: $borderRadius;
+      overflow: hidden;
+    }
+
+  }
+
+}
+

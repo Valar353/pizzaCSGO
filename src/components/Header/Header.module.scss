@@ -1,0 +1,31 @@
+@import '../../options';
+.headerWrapper{
+    width: 100%;
+    background-color: #292e35;
+    color: white;
+}
+.header{
+    padding: 20px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    height: 100px;
+    max-width: 1620px;
+}
+.headerLogo img{
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin-top: 4px;
+}
+.headerLogo h1{
+    display: none;
+}
+@media (min-width: 992px) {
+    .headerLogo h1{
+        font-size: 22px;
+        float: left;
+        padding: 4px 15px  0;
+        display: block;
+    }
+}

@@ -1,0 +1,79 @@
+@import '../../options';
+
+.item{
+    background-color: var(--bgField);
+    margin: 15px;
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    float: left;
+    border-radius: $borderRadius;
+
+    .skinInfo{
+        width: 70%;
+        float: left;
+
+        text-align: center;
+        .skinName{
+            font-size: 16px;
+            float: left;
+            width: 100%;
+        }
+        .skinDescription{
+            font-size: 14px;
+            color: var(--mainText);
+            padding: 5px 0;
+            width: 100%;
+
+        }
+        .skinImg{
+            width: 100%;
+        }
+
+
+    }
+    .output{
+        width: 25%;
+        float: left;
+        word-wrap: break-word;
+        background: var(--sideColor);
+        padding: 9px 16px;
+        margin-left: 5%;
+        font-size: 19px;
+        line-height: 16px;
+        text-align: center;
+        height: 100%;
+        border-radius: $borderRadius;
+        cursor: pointer;
+
+    }
+    .output:hover{
+        background: rgba(0,0,0,.2);
+        color: var(--mainText);
+
+    }
+
+}
+.inventoryWrapper{
+    position: relative;
+}
+.updateInventory{
+    position: absolute;
+    top: 8px;
+    right: 0;
+    cursor: pointer;
+}
+.updateInventory :hover svg{
+    transform: rotate(360deg);
+    transition: .6s;
+    //animation: rotate .6s ease-in-out infinite;
+}
+//@keyframes rotate{
+//    from{
+//        transform: rotate(0);
+//    }
+//    to{
+//        transform: rotate(360deg);
+//
+//    }
+//}
