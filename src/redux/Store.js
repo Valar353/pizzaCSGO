@@ -3,7 +3,7 @@ import userReducer from "./reducer";
 
 const initialState = {
         user: {
-            // isGuest: true
+            // isGuest: true,
             steamID: '76561198119391039',
             id: 283,
             userInventory: [],
@@ -15,8 +15,8 @@ const initialState = {
             steamGuard: true
         },
         options: {
-            showProfile: false,
-            showOverlay: false,
+            showProfile: true,
+            showOverlay: true,
         },
         // AWP | Древесная гадюка (Закаленное в боях)
         gameState: [

@@ -21,15 +21,12 @@
   justify-content: space-between;
   box-sizing: content-box;
   background: var(--sideColor);
-  height: 36px;
+  height: 31px;
+  flex-wrap: wrap;
 }
 
 .title {
-
-  embed {
-    float: left;
-    width: 36px;
-  }
+  margin-top: -3px;
 
   div {
     float: left;
@@ -127,14 +124,23 @@
     }
 
     form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      div{
+        width: auto;
+        margin-top: 0;
 
+      }
       input {
         font-family: Gotham-Black;
         background: var(--bgField);
         border: 0;
         padding: 10px 15px;
-        width: calc(100% - 270px);
-        margin-right: 10px;
+        width: 100%;
+        min-width: 270px;
+        max-width: calc(100% - 270px);
+        margin-bottom: 10px;
         color: var(--mainText);
         border-radius: $borderRadius;
 
@@ -146,10 +152,10 @@
         border: 0;
         padding: 10px 15px;
         margin-right: 10px;
-        width: 100px;
         border-radius: $borderRadius;
         cursor: pointer;
         color: var(--mainText);
+        font-size: 14px;
       }
       button:hover, a:hover{
         background-color: var(--bgSideColor);
@@ -158,7 +164,8 @@
         font-family: Gotham-Black;
         background: var(--bgField);
         padding: 10px 15px;
-        width: 100px;
+        font-size: 14px;
+
         border-radius: $borderRadius;
 
       }
@@ -168,13 +175,14 @@
 
   .steamInfo {
     display: flex;
-
+    flex-wrap: wrap;
+    justify-content: space-around;
     .dataItem {
       margin-right: 10px;
-
+      width: 200px;
       .title {
         padding-left: 2px;
-        
+
       }
       .value {
         font-family: Gotham-Black;
@@ -212,10 +220,48 @@
       background: var(--sideColor);
       //padding: 25px;
       border-radius: $borderRadius;
-      overflow: hidden;
+      overflow: auto;
     }
 
   }
 
 }
 
+@media (max-width: 600px) {
+  .profile {
+    margin: auto 10px;
+    width: calc(100% - 40px);
+  }
+  .info {
+    justify-content: center;
+    height: auto;
+  }
+  .title {
+    .personalName {
+      width: calc(100% - 100px);
+    }
+  }
+  .content .siteInfo {
+    .title{
+      font-size: 14px;
+      div{
+        margin: 5px 0 0;
+      }
+    }
+  }
+  .inventory{
+    height: 175px;
+  }
+  .content .steamInfo {
+    font-size: 13px;
+    //.dataItem {
+    //  margin-top: 0;
+    //}
+
+  }
+}
+@media (max-width: 900px) {
+  .dataItem{
+    display: none;
+  }
+}

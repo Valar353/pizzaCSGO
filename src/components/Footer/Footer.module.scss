@@ -1,41 +1,61 @@
 @import '../../options';
 
-footer{
+footer {
   width: 100%;
   min-height: 200px;
   background-color: #21252c;
   padding: 20px 40px 0;
   margin-top: 100px;
-  div{
+  text-align: center;
+
+  .footer {
     display: flex;
-    font-size: $mainTextSize;
-    justify-content: space-around;
-    padding: 15px 10px;
-    a{
-      color: white;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 1400px;
+
+    div {
+      display: flex;
+      font-size: $mainTextSize;
+      justify-content: space-around;
+      padding: 15px 10px;
+
+      a {
+        color: white;
+      }
     }
+
+    .row {
+      width: 100%;
+      flex-wrap: wrap;
+
+      .copyright {
+        color: #3f4754;
+      }
+
+      .notAffiliated {
+        color: #3f4754;
+        width: 200px;
+        font-size: 10px;
+        border: 1px solid #3f4754;
+        text-align: center;
+        position: relative;
+        border-radius: 10px;
+      }
+
+      .notAffiliated:before {
+        content: ' ';
+        position: absolute;
+        width: 60px;
+        height: 30px;
+        background: url('../../img/SteamLogo.svg') no-repeat;
+        opacity: .3;
+        left: 19px;
+        top: -16px;
+      }
+    }
+
   }
-  .copyright{
-    color: #3f4754;
-  }
-  .notAffiliated{
-    color: #3f4754;
-    width: 200px;
-    font-size: 10px;
-    border: 1px solid #3f4754;
-    text-align: center;
-    position: relative;
-    border-radius: 10px;
-  }
-  .notAffiliated:before{
-    content: ' ';
-    position: absolute;
-    width: 60px;
-    height: 30px;
-    background: url('../../img/SteamLogo.svg') no-repeat;
-    opacity: .3;
-    left: 19px;
-    top: -16px;
-  }
+
 
 }

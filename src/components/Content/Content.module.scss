@@ -1,40 +1,52 @@
 @import '../../options';
 
-.gameList{
-    background-color: var(--mainColor);
-    //width: calc(70% - 20px);
-    width: 100%;
-    overflow: hidden;
-    margin-right: 20px;
-    border-radius: 8px;
-    padding-bottom: 20px;
+.gameList {
+  background-color: var(--mainColor);
+  //width: calc(70% - 20px);
+  width: 100%;
+  overflow: hidden;
+  margin-right: 20px;
+  border-radius: 8px;
+  padding-bottom: 20px;
 }
 
 
-.currentGameIcon{
-    position: absolute;
-    left: 47px;
-    top: 18px;
-    width: 32px;
-    height: 32px;
-    fill: var(--mainText);
-}
-.wrapperChat{
-    width: 300px;
-}
-.gameTitle{
-    width: 100%;
-    background-color: var(--sideColor);
-    padding: 20px 80px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    font-size: 22px;
-    position: relative;
+.currentGameIcon {
+  position: absolute;
+  left: 47px;
+  top: 18px;
+  width: 32px;
+  height: 32px;
+  fill: var(--mainText);
 }
 
-//@media (min-width: 576px) {
-//
-//}
+.wrapperChat {
+  width: 300px;
+}
+
+.gameTitle {
+  width: 100%;
+  background-color: var(--sideColor);
+  padding: 20px 80px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .gameList {
+    margin-right: 0;
+  }
+  .wrapperChat {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+
+}
+
 //
 //@media (min-width: 768px) {
 //    .ContentContainer{

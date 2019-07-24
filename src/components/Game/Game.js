@@ -5,9 +5,7 @@ import axios from "axios";
 import {API_URL} from "../../redux/constant";
 import qs from "qs";
 import {store} from "../../redux/Store";
-import {actionAddVoting, actionUpdateGameList, actionUpdateGameListAndBalance} from "../../redux/action";
-import coin from '../../img/coin.svg';
-import currentGameIcon from "../../img/currentGame.svg";
+import {actionUpdateGameListAndBalance} from "../../redux/action";
 import ReactSVG from "react-svg";
 import coinIcon from "../../img/svg/coinIcon.svg";
 

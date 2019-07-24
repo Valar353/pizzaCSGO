@@ -76,9 +76,10 @@ export default class Profile extends React.Component {
                             {/*<p className={style.balanceCurrent}>{this._balance}</p>*/}
                         </div>
                         {/*<div className={style.balanceAdd}>*/}
-                            <a href='/'>
-                                <div className={style.fillBalance + ' svg svgFill '} onClick={this.closeModule}><ReactSVG src={fillBalance} /> </div>
-                            </a>
+                        <a href='/'>
+                            <div className={style.fillBalance + ' svg svgFill '} onClick={this.closeModule}><ReactSVG
+                                src={fillBalance}/></div>
+                        </a>
                         {/*</div>*/}
                     </div>
                 </div>
@@ -92,9 +93,11 @@ export default class Profile extends React.Component {
                                            defaultValue={this._tradeLink}
                                            autoComplete="off"
                                     />
-                                    <button>Применить</button>
-                                    <a href={LINK_TRADE_OFFER} rel="noopener noreferrer" target='_blank'>Получить
-                                        ссылку</a>
+                                    <div>
+                                        <button>Применить</button>
+                                        <a href={LINK_TRADE_OFFER} rel="noopener noreferrer" target='_blank'>Получить
+                                            ссылку</a>
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -109,7 +112,7 @@ export default class Profile extends React.Component {
                             </div>
                             <div className={style.dataItem}>
                                 <div className={style.title}>Steam Guard</div>
-                                <div className={style.value}>{this._steamGuard?'Активирован':'Не активирован'}</div>
+                                <div className={style.value}>{this._steamGuard ? 'Активирован' : 'Не активирован'}</div>
                             </div>
 
                         </div>
@@ -123,7 +126,7 @@ export default class Profile extends React.Component {
                         </div>
                         <div>
                             <div className={style.inventory}>
-                                <UserInventory />
+                                <UserInventory/>
                             </div>
                         </div>
                     </div>

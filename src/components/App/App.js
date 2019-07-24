@@ -34,7 +34,7 @@ export default class App extends React.Component {
                 </div>
                 }
                 <Footer/>
-                {/*<DashboardContainer />*/}
+                {/*<DashbsoardContainer />*/}
             </Router>
         );
     }

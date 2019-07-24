@@ -21,6 +21,7 @@
 }
 .lootInfo{
     position: relative;
+    text-align: center;
     p{
         padding: 10px;
     }
@@ -48,11 +49,7 @@
             padding: 0 3px;
             margin-top: 2px;
         }
-        svg{
-            float: left;
-            width: 22px;
-            height: 22px;
-        }
+
     }
     .voting{
         cursor: pointer;
@@ -95,4 +92,39 @@
 }
 .skin{
     width: 200px;
+}
+
+@media (max-width: 440px) {
+
+    .game{
+        margin: 15px 0 0;
+        width: 100%;
+        .item{
+            font-size: 13px;
+        }
+        .wear{
+            font-size: 10px;
+        }
+        .cost{
+            height: 20px;
+            font-size: 10px;
+            padding: 2px 2px 2px 5px;
+        }
+        .skin{
+            width: 120px;
+        }
+        .svgCoin{
+            height: 15px;
+        }
+    }
+    .gameInfo{
+        p{
+            font-size: 13px;
+            text-align: center;
+        }
+        .gameDiagram{
+            width: 130px;
+            height: 130px;
+        }
+    }
 }

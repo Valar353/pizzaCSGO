@@ -3,11 +3,13 @@ import style from './Nav.module.scss';
 import {actionChangeOption} from "../../redux/action";
 import {store} from "../../redux/Store";
 import FAQ from '../../img/FAQ.svg';
+import menuIcon from '../../img/svg/menuIcon.svg';
 import market from '../../img/svg/market.svg';
 import Balance from "../Balance/Balance";
 import SignIn from "../SignIn/SignIn";
 import {LINK_TRADE_OFFER} from "../../redux/constant";
 import ReactSVG from "react-svg";
+import onlineIcon from "../../img/svg/onlineIcon.svg";
 
 export default class Nav extends React.Component {
     constructor(props) {
@@ -59,26 +61,30 @@ export default class Nav extends React.Component {
         if (this._isGuest) {
             this._button = <SignIn/>
         } else {
-            this._button = <div className={style.navItem}>
+            this._button =
                 <div className={style.profileShort}>
-                    <Balance cost={this.balance} style={'#373d49'}/>
+                    <div className={style.balance}><Balance cost={this.balance} style={'#373d49'}/></div>
                     <div className={style.personalName}>{this._steamName}</div>
 
                     <img className={style.personalAvatar} alt='steam avatar' src={this._steamImg}/>
-                    {/*<div className={style.buttonShowMenu}/>*/}
+                    <div className={'svg svg40 '+style.buttonCollapse}><ReactSVG src={menuIcon} /></div>
+
                     <div className={style.profileMenu}>
                         <div className={style.menuCollapse}>
                             <div onClick={this.clickProfile}>Личный кабинет</div>
                             <div><a href={LINK_TRADE_OFFER}>Ссылка на обмен</a></div>
+                            <div className={style.collapseItem}><a href='/'>Маркет</a></div>
+                            <div className={style.collapseItem}><a href='/'>FAQ</a></div>
                             <div>
                                 <form action='' method='get'>
                                     <button name='logout' type='submit'>Выход</button>
                                 </form>
                             </div>
                         </div>
+                        {/*<div className={style.menuCollapse}></div>*/}
                     </div>
                 </div>
-            </div>
+
         }
         if (this._theme !== 'black') {
             this.theme = <div onClick={this.changeTheme} className={style.changeTheme + ' ' + style.changeBlack}/>;

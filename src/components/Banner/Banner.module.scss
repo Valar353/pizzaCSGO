@@ -5,7 +5,7 @@
   display: flex;
   margin: 30px auto 0 auto;
   justify-content: center;
-  min-height: 150px;
+  //min-height: 150px;
 }
 .bannerNav{
   position: absolute;
@@ -50,16 +50,17 @@
   height: 100px;
   margin: 0;
   border-radius: $borderRadius;
+  width: 100%;
 }
 
 //@media (min-width: 576px) {
 //
 //}
-//@media (min-width: 768px) {
-//  .banner{
-//    width: 100%;
-//  }
-//}
+@media (max-width: 768px) {
+  .bannerWrapper{
+    padding: 0;
+  }
+}
 //
 //@media (min-width: 992px) {
 //  .banner{

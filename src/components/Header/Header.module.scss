@@ -19,13 +19,12 @@
     margin-top: 4px;
 }
 .headerLogo h1{
-    display: none;
+    font-size: 22px;
+    float: left;
+    padding: 4px 15px  0;
 }
-@media (min-width: 992px) {
+@media (max-width: 335px) {
     .headerLogo h1{
-        font-size: 22px;
-        float: left;
-        padding: 4px 15px  0;
-        display: block;
+        display: none;
     }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './SignIn.module.scss';
 import SteamLogo from '../../img/SteamLogo.svg';
+import ReactSVG from "react-svg";
 
 export default class SignIn extends React.Component {
 
@@ -8,8 +9,8 @@ export default class SignIn extends React.Component {
 
         return (
             <a href="?login" className={style.navItem + ' ' + style.authButton}>
-                <embed src={SteamLogo} className={style.SteamIconButton}/>
-                <div >Войти через Steam</div>
+                <div className={'svg '+style.steamIconButton}><ReactSVG src={SteamLogo} /></div>
+                <div className={style.buttonText}>Войти через Steam</div>
             </a>
         );
     }

@@ -18,8 +18,23 @@
   div{
     padding-left: 20px;
   }
-  .SteamIconButton{
+  .steamIconButton{
     position: absolute;
     left: -15px;
+    width: 60px;
+    height: 29px;
   }
+}
+
+@media (max-width: 600px) {
+  .buttonText{
+    display: none;
+  }
+  .authButton{
+    width: 100px;
+    .steamIconButton{
+      left: 20px;
+    }
+  }
+
 }
