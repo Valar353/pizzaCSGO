@@ -15,19 +15,11 @@ const initialState = {
             steamGuard: true
         },
         options: {
-            showProfile: true,
-            showOverlay: true,
+            showProfile: false,
+            showOverlay: false,
         },
-        // AWP | Древесная гадюка (Закаленное в боях)
         gameState: [
-            // {
-            //     item: 'AWP | Древесная гадюка',
-            //     info: 'После полевых испытаний',
-            //     cost: 300,
-            //     vote: 0,
-            //     needVote: 6,
-            //     nGame: 1,
-            // },
+
         ],
         myMessage: '',
         chatList:[[]]
@@ -37,6 +29,5 @@ const initialState = {
         // }
     }
 ;
-//ХРАНИЛИЩЕ
 let store = createStore(userReducer);
 export {store, initialState};

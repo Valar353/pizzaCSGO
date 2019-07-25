@@ -1,3 +1,8 @@
 .wrapper{
   font-size: 20px;
+  flex-wrap: wrap;
+  background-color: var(--mainColor);
+  margin: 75px auto;
+  padding: 10px 40px;
+  border-radius: 8px;
 }

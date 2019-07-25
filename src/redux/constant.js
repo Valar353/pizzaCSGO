@@ -1,4 +1,3 @@
-// КОНСТАНТЫ
 export const INIT_USER = 'INIT_USER';
 export const LINK_TRADE_OFFER = 'https://steamcommunity.com/id/me/tradeoffers/privacy#trade_offer_access_url';
 export const SET_TRADELINK = 'SET_TRADELINK';
@@ -10,5 +9,5 @@ export const UPDATE_USER_INVENTORY = 'UPDATE_USER_INVENTORY';
 export const ADD_VOTING = 'ADD_VOTING';
 export const CHANGE_OPTION = 'CHANGE_OPTION';
 export const CLOSE_MODULE = 'CLOSE_MODULE';
-export const API_URL = 'http://pizzacsgo';
-// export const API_URL = 'https://pizzacsgo.com';
+// export const API_URL = 'http://pizzacsgo';
+export const API_URL = 'https://pizzacsgo.com';

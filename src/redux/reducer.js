@@ -21,7 +21,6 @@ export default function userReducer(state = initialState, action) {
                     userInventory:[
                         ...action.skins
                     ],
-
                 }
             };
         case UPDATE_LIST_MESSAGE:
